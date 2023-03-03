@@ -1,0 +1,17 @@
+<table>
+  <caption>{{ title }}</caption>
+  <tr>
+    <th>Name</th>
+    <th>Last name</th>
+    <th>Fiscal code</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Province</th>
+    <th>Age</th>
+    <th>Actions</th>
+  </tr>
+  <tr app-user *ngFor="let user of users" [user-data]="user"
+  (onDeleteUser)="onDeleteUser($event)">
+  <!-- Quando questo componente passa un parametro al figlio, gli e lo passa tra parentesi quadre, vuol dire che questo parametro è @Input; Se il parent vuole ascoltare/ricevere, allora utilizzamo le parentesi tonde con gli eventi, questo è un parametro di @Output. Io voglio ascoltare questo evento (onDeleteUser) e quando verrà emesso questo evento faccio scattare la funzione "onDeleteUser()" e per prenderci questi dati passiamo la variabile fornita da Angular, $event, che in questo caso è user (perchè lo stiamo passando dal componente user) -->
+  </tr>
+</table>

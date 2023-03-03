@@ -1,0 +1,11 @@
+<td>{{user?.name}}</td>
+<td>{{user?.lastname}}</td>
+<td>{{user?.fiscalcode}}</td>
+<td>{{user?.email}}</td>
+<td>{{user?.phone}}</td>
+<td>{{user?.province}}</td>
+<td>{{user?.age}}</td>
+<!-- Sul TS l’elemento user lo abbiamo messo che può essere di tipo User oppure di tipo undefined, quindi il punto interrogativo vuol dire che se l'oggetto è null, la parte dopo il punto (name, lastname, etc) non verrà mai eseguita. -->
+<td>
+  <button class="delete" (click)="deleteUser()">DELETE</button>
+</td>
