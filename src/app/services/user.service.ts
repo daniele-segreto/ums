@@ -48,7 +48,7 @@ export class UserService {
   ]
 
   getUsers() {
-    return this.users
+    return this.users;
   }
 
   // La funzione riceve un oggetto "user" di qualsiasi tipo

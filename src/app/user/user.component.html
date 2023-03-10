@@ -7,5 +7,6 @@
 <td>{{user?.age}}</td>
 <!-- Sul TS l’elemento user lo abbiamo messo che può essere di tipo User oppure di tipo undefined, quindi il punto interrogativo vuol dire che se l'oggetto è null, la parte dopo il punto (name, lastname, etc) non verrà mai eseguita. -->
 <td>
+  <button class="update" (click)="updateUser()">UPDATE</button>
   <button class="delete" (click)="deleteUser()">DELETE</button>
 </td>
